@@ -1,0 +1,12 @@
+# Compiled C++ programs
+*.exe
+*.o
+*.obj
+*.out
+
+# Debug files
+*.pdb
+*.ilk
+
+# Temporary files
+*.tmp
