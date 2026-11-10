@@ -1,0 +1,28 @@
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int A;
+    int B;
+    int i;
+
+    cout << "Enter two numbers: ";
+    cin >> A >> B;
+
+    if (A > B){
+        i = A;
+    }
+    else{
+        i = B;
+    }
+
+    for (; i <= A*B; i++){
+        if (i % A == 0 && i % B == 0){
+            cout << "LCM = " << i;
+            break;
+        }
+    }
+
+    return 0;
+}

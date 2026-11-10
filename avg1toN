@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int i;
+    int N;
+    float sum;
+    float avg;
+    sum=0;
+    cin>>N;
+    for(i=1;i<=N;i++)
+    {
+        sum=sum+i;
+        avg=sum/N;
+        
+    }
+   
+   cout<<avg<<endl;
+   return 0;
+   
+   
+   
+   
+    
+}
+
+
+
