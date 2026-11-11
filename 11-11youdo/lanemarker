@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int lanes = 5;
+    int marker;
+    int sum = 0;
+
+    for (int i = 1; i <= lanes; i++) {
+        marker = i * 3;
+
+        cout << marker << endl;
+
+        sum = sum + marker;
+    }
+
+    cout << "Marker total " << sum;
+
+    return 0;
+}

@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int balance;
+    int visits;
+
+    cout << "Enter balance: ";
+    cin >> balance;
+
+    if (balance % 20 == 0) {
+        visits = balance / 20;
+    }
+    else {
+        visits = (balance / 20) + 1;
+    }
+
+    while (balance > 0) {
+        if (balance >= 20) {
+            cout << 20 << endl;
+            balance = balance - 20;
+        }
+        else {
+            cout << balance << endl;a
+            balance = 0;
+        }
+    }
+
+    cout << "Visits = " << visits;
+
+    return 0;
+}

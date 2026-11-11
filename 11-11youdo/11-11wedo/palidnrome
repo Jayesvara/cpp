@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, temp, digit, reverse = 0;
+
+    cout << "Enter locker number: ";
+    cin >> num;
+
+    temp = num;
+
+    do {
+        digit = temp % 10;
+
+        reverse = reverse * 10 + digit;
+
+        temp = temp / 10;
+
+    } while (temp > 0);
+
+    cout << "Reverse = " << reverse << endl;
+
+    if (num == reverse) {
+        cout << "Palindrome";
+    }
+    else {
+        cout << "Not palindrome";
+    }
+
+    return 0;
+}
